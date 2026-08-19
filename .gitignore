@@ -1,0 +1,62 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+frontend/config.js
+backend/.env
+backend/config.local.*
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local persistence and SQLite runtime files
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Node/Vercel dependencies and build output
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+dist/
+build/
+.vercel/
+.next/
+
+# Logs, temporary files, editor files, and OS files
+*.log
+logs/
+.tmp/
+tmp/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archives and generated reports
+*.zip
+*.tar
+*.tar.gz
+coverage/
+htmlcov/
+
+# Original Manus/project runtime metadata if copied into this package
+.manus-logs/
+.project-config.json
+
+# Keep the deployable source and documentation; do not ignore Dockerfiles,
+# render.yaml, requirements.txt, config.example.js, tests, or markdown guides.
